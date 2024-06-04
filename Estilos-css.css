@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif ;
+    text-decoration: none;
+    }
+    header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    }
+    /* header superior*/
+    .header_superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    }
+    .logo img{
+    width: 60px;
+    height: 60px;
+    }
+    .search input{
+    width: 300px;
+    padding: 10px;
+    }
+    .container_menu {
+    width: 100%;
+    height: 70px;
+    background: #023877;
+    padding: 0px 20px;
+    }
+    .menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    }
+    nav{
+    height: 100%;
+    }
+    nav > ul{
+    height: 100%;
+    display: flex;
+    }
+    nav    ul  li{
+    height: 100%;
+    list-style:  none;
+    position: relative
+    }
+    nav > ul > li > a{
+    width: 100% ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    font-size: 14px;
+    transition: all 300ms ease;
+    }
+    nav > ul > li > a:hover{
+    transform: scale(1.1) ;
+    background: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.5);
+    }
+    nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.5);
+    z-index: 10px;
+    transition: all 300ms ease;
+    }
+    nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+    }
+    nav ul li ul li a{
+    display: block;
+    color: #0099e9;
+    padding: 6px;
+    padding-left: 12px;
+    margin-top: 11px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+    }
+    nav ul li ul li a:hover{
+    background-color: #0074c7;
+    color: #fff;
+    transform: scale(1.1);
+    padding-left: 20px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.5);
+    }
+    main{
+    background: #f0f0f0;
+    padding: 40px 20px;
+    margin-top: 114px;
+    }
+    section{
+    max-width: 1290px;
+    margin: 30px auto;
+    padding: 40px;
+    background: #fff;
+    }
+    section p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300px;
+    }
+    #EOLICA {
+    text-align: right;
+    }
+    img{
+    width: 300px;
+    height: 150px;
+    }
+    p {
+    font-size: 17px;
+    text-align: center;
+    padding: 12px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .slider-container {
+    width: 100%;
+    overflow: hidden;
+    
+    }
+    .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+    
+    }
+    .slider img {
+    width: 90px;
+    height: auto;
+    
+    }
+    table{
+    padding: 9px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    tr:nth-child(even) {
+    background-color: #ddd;
+    }
+    td{
+    border: 1px solid;
+    }
+    .Normal{
+    text-align: left;
+    }
+    h2{
+        text-align: left;
+    }
+    .info_title{
+        margin: 0;
+        padding: 0;
+    }
+    .normal{
+        text-align: left;
+    }
+    /*Formulario -----*/
+
+    :focus{
+        outline: none;
+    }
+    form.form_contact{
+        width: 62%;
+        padding: 30px 40px;
+    }
+    form.form_contact h2{
+        font-size: 25px;
+        font-weight: 600;
+        color: #303030;
+        margin-bottom: 30px;
+    }
+    form.form_contact .user_info{
+        display: flex;
+        flex-direction: column;
+    }
+    form.form_contact label{
+        font-weight: 600px;
+    }
+    form.form_contact input,
+    form.form_contact textarea  {
+        width: 100%;
+        border: none;
+        padding: 8px 0 5px;
+        border-bottom: 2px solid #D1D1D1;
+        margin-bottom: 20px;
+        font-family: 'Open sans';
+        color: #5A5A5A;
+        font-size: 14px;
+        font-weight: 400px;
+    }
+    form.form_contact textarea {
+            max-width:  100%;
+            min-width: 100%;
+            max-height: 90px;
+    }
+    form.form_contact button{
+        width: 180px;
+        background: #4091ec;
+        padding: 10px;
+        border: none;
+        border-radius: 25px;
+        align-self: flex-end;
+        color: #fff;
+        font-family: 'Open sans';
+        font-size: 16px;
+        font-weight: 600px;
+        cursor: pointer;
+    }
+    form.form_contact input[type="button"]:hover{
+        background: #3371b6;
+    }
+    #TRUCAZO{
+        opacity: 0;
+    }
+    
+    
+ 
+    
